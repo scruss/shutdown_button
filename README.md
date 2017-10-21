@@ -132,4 +132,4 @@ configuration.
 Stewart C. Russell — [scruss.com](https://scruss.com/blog/) —
 [@scruss](https://twitter.com/scruss).
 
-Writeup (with some pictures):  http://scruss.com/blog/2017/10/21/combined-restart…for-raspberry-pi/
+Writeup (with some pictures): http://scruss.com/blog/2017/10/21/combined-restart-shutdown-button-for-raspberry-pi/
