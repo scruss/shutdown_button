@@ -119,7 +119,9 @@ example from the GPIO Zero documentation.
 This is not the only combined shutdown/reset button project to use
 GPIO Zero. [gilyes/pi-shutdown](https://github.com/gilyes/pi-shutdown)
 also does so, but pre-dates the implementation of the various hold
-time functions in GPIO Zero.http://adafru.it/2423] display I own.
+time functions in GPIO Zero.
+
+GPIO 27 was used, as it's broken out onto a physical button on the Adafruit [PiTFT+](http://adafru.it/2423) display I own.
 
 This is my first systemd service, and I'm still at the “amazed it
 works at all” stage. The service file may not contain the ideal
