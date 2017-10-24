@@ -56,13 +56,13 @@ the button is pressed.
 
 The software is installed with the following commands:
 
-    sudo apt-install python3-gpiozero
+    sudo apt install python3-gpiozero
     sudo mkdir -p /usr/local/bin
-	chmod +x shutdown_button.py
-	sudo cp shutdown_button.py /usr/local/bin
-	sudo cp shutdown_button.service /etc/systemd/system
-	sudo systemctl enable shutdown_button.service
-	sudo systemctl start shutdown_button.service
+    chmod +x shutdown_button.py
+    sudo cp shutdown_button.py /usr/local/bin
+    sudo cp shutdown_button.service /etc/systemd/system
+    sudo systemctl enable shutdown_button.service
+    sudo systemctl start shutdown_button.service
 
 ## Troubleshooting
 
@@ -72,7 +72,7 @@ Enabling the service should produce output very similar to:
 
 You can check the status of the program at any time with the command:
 	
-	systemctl status shutdown_button.service
+    systemctl status shutdown_button.service
 
 This should produce output similar to:
 	
