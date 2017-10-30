@@ -30,8 +30,7 @@ timing can be changed in the Python source file.
 
 ### Software
 
-* A Debian-based operating system that uses systemd (tested on Wheezy
-  [RetroPie] and Stretch)
+* A Debian-based operating system that uses systemd (tested on Jessie and Stretch)
   
 * the `python3-gpiozero` package to provide [GPIO
   Zero](https://gpiozero.readthedocs.io/en/stable/) (tested on version 1.4.0)
