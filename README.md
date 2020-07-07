@@ -7,11 +7,15 @@ software-controlled restart / shutdown button.
 
 Default behaviour is:
 
-* your Raspberry Pi will *reset* if the button is held for more than two
-  seconds but fewer than five seconds;
+* your Raspberry Pi will *reset* if the button is held for more than five
+  seconds but fewer than ten seconds;
 
-* your Raspberry Pi will *shut down* if the button is held for more than five
+* your Raspberry Pi will *shut down* if the button is held for more than ten
   seconds.
+
+* Beep sound will be played every second the button is held ('click.wav')
+* Specific sound will be played when 5 seconds are up and reset is about to occur ('reset.wav')
+* Specific sound will be played when 10 seconds are up and shutdown is about to occur ('shutdown.wav')
 
 By default, the software assumes the switch is connected to pin [BCM
 27](https://pinout.xyz/pinout/pin13_gpio27#). Both the pin and the
@@ -71,10 +75,9 @@ The software is installed with the following commands:
     sudo apt install python3-gpiozero
     sudo mkdir -p /usr/local/bin
     chmod +x shutdown_button.py
-    sudo cp shutdown_button.py /usr/local/bin
-    sudo cp shutdown_button.service /etc/systemd/system
-    sudo systemctl enable shutdown_button.service
-    sudo systemctl start shutdown_button.service
+    sh install.sh
+
+You can use 'sh install.sh' to re-install, if changes are made, such as- replacing sound files
 
 ## Troubleshooting
 
