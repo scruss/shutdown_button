@@ -1,3 +1,5 @@
+**Please use the system-supplied and supported [gpio-shutdown](https://github.com/raspberrypi/firmware/blob/master/boot/overlays/README) boot overlay. This repo is obsolete**
+
 # Combined Restart / Shutdown Button for Raspberry Pi
 
 A very simple systemd service for Raspberry Pi that provides a
